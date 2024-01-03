@@ -62,10 +62,10 @@ function digits(num) {
 }
 
 function truncate(str) {
+  let final = '';
   if (isLong(str) === false) {
     return str;
   } else {
-    final = '';
     for (let char of str) {
       if (final.length <= 7) {
         final = final + char;
